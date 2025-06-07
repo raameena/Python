@@ -2,11 +2,33 @@
 
 ## Python Basics 1: Core Data Types Pt 1, Control Flow
 
+### 1. Numbers, text, booleans, truth values
+- int, string, bool
+- do not need to specify the type in Python, does it automatically
+- examples provided in file
+
+### 2. if, elif, for loops, for else, while
+- format for all are in file
+- colon instead of semi colon 
+
+### 3. Basic functions
+- (f"") formatting:
+   - (f"Hello, my name is {name} and I am {age} years old.")
+   - Makes it so you don't have to add + between variables, simple cleaner
+- variable.upper() : VARIABLE
+- variable.lower() : variable
+- variable.title() : Variable
+- variable.strip() : removes white space from front and end
+- variable.lstrip() : "    variable"
+- variable.rstrip() : "variable    "
+- variable.replace(these letters, w these)
+- print(variable.find("var") : returns index
+- print("var" in variable) : True
+- print("hi" in variable : False
 
 ## Python Basics 2: Core Data Types Pt 2
 
 ### 1. List, Tuples, Range
-
 - Vocab:
    - Dynamic Array: can be resized at runtime
    - Static Array: fixed size
@@ -51,8 +73,8 @@
     - has composite key, constant lookup
     - slightly faster bc immutable
     - can do union, etc., but make a new frozenset ( not mutable )  
-### 4. Dict
 
+### 4. Dict
 - Notes:
     - Short for "dictionary"
     - holds: {key,value}
