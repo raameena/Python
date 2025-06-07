@@ -1,2 +1,66 @@
 # Learning Python
-Learning Python and Projects
+
+## Python Basics 1: Core Data Types Pt 1, Control Flow
+
+
+## Python Basics 2: Core Data Types Pt 2
+
+### 1. List, Tuples, Range
+
+- Vocab:
+   - Dynamic Array: can be resized at runtime
+   - Static Array: fixed size
+   - Hash(): Makes uniqe key that can be used to check for repeats in memory
+
+- List:
+    - can change size, ordred, dynamic array
+    - index[#] O(1)
+    - append [back] O(1)
+    - pop [front] O(n) - have to move everything back (deque is O(1))
+    - shift [middle] O(n)
+    - in sequence O(n)
+- Tuple:
+    - cannot change tuple size, but can change elements stored in them (unhashable), fixed record/hashable, only read cannot add
+    - index[#] O(1)
+    - in sequence O(n)
+    - can be mutable with [] ONLY - not hashable bc its changed after runtime
+- Range:
+    - loops/slicing, (start,stop,step) arthmetically
+    - index[#] O(1)
+    - in sequence O(1)
+
+### 3. Set/Frozenset
+- Notes:
+  - Dict: short for dictionary ( look up )
+  - Cannot have two of the same elements in either set (only multiset)
+- Sets:
+    - mutable, membership and uniqness
+    - x in set O(1) // hash, search for uniqness
+    - add remove O(1)
+    - can use math:   ( fast membership )
+        - (|) union
+        - (&) intersection
+        - (-) difference
+        - (^) symetric difference
+    - unordered
+    - cant store unashable items (lists) - use frozenset or tuples
+    0 cannot be used for hash
+- Frozenset:
+    - not mutable, hashable "set of things" you can use as a dict key
+    - immutable
+    - has composite key, constant lookup
+    - slightly faster bc immutable
+    - can do union, etc., but make a new frozenset ( not mutable )  
+### 4. Dict
+
+- Notes:
+    - Short for "dictionary"
+    - holds: {key,value}
+- Dict:
+    - Mappng: each key is unique
+    - Keys are hashed -> place in hash bucket, make a hashtable
+    - lookup, insert, delete all O(1) (same bucket O(n))
+    - insertion order (can use orderedDict)
+    - must be hashable (int,str,tuple) (not list,dict)
+    - dictionary is mutable
+
