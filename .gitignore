@@ -192,3 +192,29 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# ──────────────────────────────────────────────────────────────
+# Keep *only* Easy, Medium, Hard inside “Leetcode Practice”
+# 1 . Ignore the whole directory …
+/Leetcode\ Practice/**
+
+# 2 . … then un-ignore the three sub-folders and everything in them
+!/Leetcode\ Practice/Easy/
+!/Leetcode\ Practice/Easy/**
+
+!/Leetcode\ Practice/Medium/
+!/Leetcode\ Practice/Medium/**
+
+!/Leetcode\ Practice/Hard/
+!/Leetcode\ Practice/Hard/**
+# ──────────────────────────────────────────────────────────────
+
+# ⬇ your existing Python/VSC/ruff ignores (unchanged) ⬇
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+… <keep the rest of your template exactly as it is> …
