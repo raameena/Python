@@ -1,7 +1,7 @@
 # Python Basics #1: Core Data Types Pt 1, Control Flow
     # Numbers, text, booleans, truth values
     # if, elif, for loops, for else, while
-    # (f""") formatting 
+    # (f""") formatting
 import math
 
 # multiplies "*" by ten when it prints

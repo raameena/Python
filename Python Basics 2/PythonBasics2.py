@@ -1,7 +1,7 @@
 # Python Basics #2: Core Data Types Pt 2
-    # List, Tuples, Range
-    # Set Frozenset
-    # Dict
+# List, Tuples, Range
+# Set Frozenset
+# Dict
 
 """
 # Vocab:
@@ -73,12 +73,12 @@ frozensets can do union, etc. but make new frozenset ( not mutable )
 
 
 # set mutation helpers
-s ={}
+s = {}
 h = {}
-t= s | h
-s.update(t)              # union in-place  ( |= )
-s.intersection_update(t) # keep common     ( &= )
-s.difference_update(t)   # remove t elems  ( -= )
+t = s | h
+s.update(t)  # union in-place  ( |= )
+s.intersection_update(t)  # keep common     ( &= )
+s.difference_update(t)  # remove t elems  ( -= )
 
 # set example union:
 
