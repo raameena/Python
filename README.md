@@ -97,3 +97,23 @@
     - must be hashable (int,str,tuple) (not list,dict)
     - dictionary is mutable
 
+## Python Basics 3: Functions
+- Notes:
+   - def: used to define functions
+   - "First class": can be used in functions or as parameter
+ 
+### 1. Default: 
+- Ex. (var = 5)
+- can be overridden
+
+### 2. Keyword Only Args
+- Ex. (*, var = 10)
+- Anything after * must be defined when calling
+
+### 3. *Args
+- Examples + Explanation:
+   - I. (*var, this = 5)
+   - II. (1,2,3,4,5, this = 5) this must be defined afterwards
+   - Explanation: program creates tuple with *var (1,2,3,4,5) 
+- var must be list, tuple, set
+   - (will be unpacked)
