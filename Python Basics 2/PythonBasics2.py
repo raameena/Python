@@ -77,8 +77,6 @@ s = {}
 h = {}
 t = s | h
 s.update(t)  # union in-place  ( |= )
-s.intersection_update(t)  # keep common     ( &= )
-s.difference_update(t)  # remove t elems  ( -= )
 
 # set example union:
 
@@ -90,14 +88,6 @@ for stuff in unique_users:
     if "grace" in visitors:  # very fast look up ( hash process )
         print("hi")
         break
-
-text = "The quick brown fox jumps over the lazy dog"
-words = set(text.lower().split())
-stopwords = {"the", "a", "of", "and", "to"}
-uniqieWords = words - stopwords  # prints unique words
-print(uniqieWords)
-sameWords = words & stopwords
-print(sameWords)
 
 
 """

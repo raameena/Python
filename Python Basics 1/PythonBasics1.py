@@ -1,7 +1,7 @@
 # Python Basics #1: Core Data Types Pt 1, Control Flow
-    # Numbers, text, booleans, truth values
-    # if, elif, for loops, for else, while
-    # (f""") formatting
+# Numbers, text, booleans, truth values
+# if, elif, for loops, for else, while
+# (f""") formatting
 import math
 
 # multiplies "*" by ten when it prints
@@ -86,18 +86,18 @@ print(message)  # an easier and way simple way to make an if statment !
 # words u can use in code: and, or, not
 high_income = True
 good_credit = True
-if (high_income and good_credit):
+if high_income and good_credit:
     print("Both true")
 else:
     print("One or both aren't true")
 
 # loops in python
-for number in range(1,10,2): # 1 to 10, step 2
+for number in range(1, 10, 2):  # 1 to 10, step 2
     print("Sending a message")
 
 # for else loops , if loop doesnt do what u want, else runs
 successful = False
-for number in range(3): # 1 to 10, step 2
+for number in range(3):  # 1 to 10, step 2
     print("Attempt")
     if successful:
         print("Successful")
@@ -125,9 +125,9 @@ while command.lower() != "quit":
 
 print("BYE")
 counter = 0
-for i in range(1,10):
-    if (i % 2 == 0):
+for i in range(1, 10):
+    if i % 2 == 0:
         print(i)
-        counter = counter +1
+        counter = counter + 1
 else:
     print(f"We have {counter} even numbers")

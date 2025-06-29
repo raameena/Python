@@ -1,4 +1,4 @@
-""" Functions
+"""Functions
 # Need def to define functions
 # First class: can be used in functions or as parameter
 # default: (var = 5) can be overrided
